@@ -1,0 +1,45 @@
+import Modal from 'react-responsive-modal';
+import { ModalContextProps } from '../../providers/modal_provider';
+import React from 'react';
+
+export interface ModalProps {
+    name: string | "",
+    title?: string | "",
+    context: ModalContextProps,
+    children: string | JSX.Element | JSX.Element[],
+
+}
+
+const AppModal: React.FC<ModalProps> = (props) => {
+
+    const { isOpen, closeModal } = props.context;
+
+    console.log("AppModal ", isOpen)
+
+    const onClose = () => closeModal(props.name);
+
+    return (
+
+        <Modal open={isOpen[props.name] ?? false} onClose={onClose}>
+            <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+                <div className="h-screen p-4 inline-flex w-full items-center min-h-full  justify-center">
+                    <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                        <div className="sm:flex sm:items-start">
+                            <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full">
+                                <div className="text-base font-semibold leading-6 text-gray-900">
+                                    {props.title}
+                                </div>
+                                <div className="mt-2">
+                                    {props.children}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Modal>
+
+    );
+}
+
+export default AppModal;
