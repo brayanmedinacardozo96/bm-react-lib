@@ -13,7 +13,7 @@ const UILabel: React.FC<UILabelProps> = (props) => {
             // style={{ top: "-8px", left: '10px' }}
             id={props.id}
             htmlFor={props.htmlFor}
-            className={props.className ?? 'text-xs text-gray-900'} //absolute bg-white
+            className={props.className ?? 'text-xs'} //absolute bg-white
         >
             {props.text}
         </label>
