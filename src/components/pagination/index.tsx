@@ -6,6 +6,8 @@ export interface AppPaginationProps {
     total: string,
     currentPage: string,
     lastPage: string,
+    labelTotal?: string
+    labelOf?: string
     childPrevious: JSX.Element | JSX.Element[],
     childNext: JSX.Element | JSX.Element[],
 
@@ -16,10 +18,10 @@ const AppPagination: React.FC<AppPaginationProps> = (props) => {
     return (
         <div className="app-pagination" aria-label="Table navigation">
             <span className="app-pagination-register">
-                Registros
+                {props.labelTotal ?? "Registros"}
                 <span className="app-pagination-label">
                     {props.from} - {props.to}
-                </span> de
+                </span> {props.labelOf ?? "de"}
                 <span className="app-pagination-label">
                     {props.total}
                 </span>

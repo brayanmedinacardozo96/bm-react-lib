@@ -5,6 +5,8 @@ export interface AppPaginationProps {
     total: string;
     currentPage: string;
     lastPage: string;
+    labelTotal?: string;
+    labelOf?: string;
     childPrevious: JSX.Element | JSX.Element[];
     childNext: JSX.Element | JSX.Element[];
 }
