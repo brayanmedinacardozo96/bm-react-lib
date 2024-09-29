@@ -8,6 +8,7 @@ export interface AppPaginationProps {
     lastPage: string,
     labelTotal?: string
     labelOf?: string
+    labelPage?: string
     childPrevious: JSX.Element | JSX.Element[],
     childNext: JSX.Element | JSX.Element[],
 
@@ -34,7 +35,7 @@ const AppPagination: React.FC<AppPaginationProps> = (props) => {
                 </li>
                 <li>
                     <a href="#" className="app-pagination-page">
-                        Página {props.currentPage} de {props.lastPage}
+                        {props.labelPage ?? "Página"}   {props.currentPage} {props.labelOf ?? "de"} {props.lastPage}
                     </a>
                 </li>
                 <li>
