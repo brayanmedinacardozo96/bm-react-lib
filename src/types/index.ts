@@ -5,3 +5,4 @@ export { ThemeContextProps } from './theme'
 export { TableSelectType } from './row_select'
 export { Page, Pages } from './page'
 export { OpenNoFrameProps } from './route'
+export { SelectDto } from "./select"
