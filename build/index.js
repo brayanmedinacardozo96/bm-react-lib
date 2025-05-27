@@ -7,3 +7,4 @@ export { default as UILabel } from './components/labels';
 export { AppMenu, AppBrand } from './components/menu';
 export * from './components/nav';
 export { default as LayoutForm } from './components/layout/form';
+export { default as FieldSearch } from './components/field_search';
