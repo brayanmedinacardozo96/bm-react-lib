@@ -1,6 +1,6 @@
 import React from "react";
 
-interface SearchButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface SearchButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     label?: string;
     onClick?: () => void,
     bgColorClass?: string,

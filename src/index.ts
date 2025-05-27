@@ -8,3 +8,4 @@ export { default as UILabel, UILabelProps } from './components/labels';
 export { AppMenu, AppMenuProps, MenuItemsType, AppBrand, AppBrandProps } from './components/menu';
 export * from './components/nav';
 export { default as LayoutForm, LayoutFormProps } from './components/layout/form';
+export { default as FieldSearch, SearchButtonProps } from './components/field_search';
