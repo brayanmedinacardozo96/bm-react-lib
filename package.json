@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "build": "npx tsc -p ."
+    "build": "npx tsc -p . && cp src/components/alerts/alert.css build/components/alerts/alert.css"
   },
   "keywords": [
     "react",
