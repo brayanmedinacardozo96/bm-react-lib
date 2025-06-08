@@ -1,4 +1,4 @@
 export interface SelectDto {
-    value: number | string;
+    value: string;
     label: string;
 }
