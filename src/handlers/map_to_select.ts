@@ -15,6 +15,11 @@ export const mapToSelectDto = <T extends Record<string, unknown>>(
     labelPath: string,
     valuePath: string
 ): SelectDto[] => {
+
+    if (!Array.isArray(dataArray)) {
+        return [];
+    }
+
     return dataArray.map(item => {
         const label = labelPath.split('.').reduce((acc: any, key) => acc && (acc as Record<string, unknown>)[key], item) ?? "";
         const value = valuePath.split('.').reduce((acc: any, key) => acc && (acc as Record<string, unknown>)[key], item) ?? "0";
