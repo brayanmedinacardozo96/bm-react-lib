@@ -21,7 +21,7 @@ export interface ActionsHandlerConfig extends ActionsDependencies {
 }
 
 // Versión pura para biblioteca (sin hooks)
-export function createAction<T = unknown>(
+export function useCreateAction<T = unknown>(
     send: CreateFn<T>,
     config: ActionsHandlerConfig
 ) {

@@ -11,4 +11,4 @@ export { default as LayoutForm, LayoutFormProps } from './components/layout/form
 export { default as FieldSearch, SearchButtonProps } from './components/field_search';
 export { default as Alert, AlertType, AlertProps } from './components/alerts/alert';
 export { mapToSelectDto, mapDefaultSelectValue, excludeFields } from './handlers';
-export { ActionsDependencies, SaveResult, CreateFn, ActionsHandlerConfig, createAction } from './action';
+export { ActionsDependencies, SaveResult, CreateFn, ActionsHandlerConfig, useCreateAction } from './action';
