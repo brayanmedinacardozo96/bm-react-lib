@@ -11,4 +11,4 @@ export { default as FieldSearch } from './components/field_search';
 export { default as Alert } from './components/alerts/alert';
 export { mapToSelectDto, mapDefaultSelectValue, excludeFields } from './handlers';
 export { useCreateAction } from './action';
-export { LoaderContext, LoaderProvider } from './loader';
+export { LoaderContext, LoaderProvider, useLoader } from './loader';
