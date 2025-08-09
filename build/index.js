@@ -13,3 +13,4 @@ export { mapToSelectDto, mapDefaultSelectValue, excludeFields } from './handlers
 export { useCreateAction } from './action';
 export { LoaderContext, LoaderProvider, useLoader } from './loader';
 export { ModalProvider, useGlobalModal, ModalContext, AppModal } from './modal';
+export { AppDataProvider, useAppDataContext } from './app_data';
