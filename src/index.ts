@@ -1,5 +1,4 @@
 export * from './types';
-
 export { default as AppButton, AppButtonProps } from './components/button';
 export { default as LayoutHeadModal, LayoutHeadModalProps } from './components/layout/head_modal';
 export { default as InputGroup, InputGroupProps } from './components/input_group';
@@ -13,3 +12,4 @@ export { default as Alert, AlertType, AlertProps } from './components/alerts/ale
 export { mapToSelectDto, mapDefaultSelectValue, excludeFields } from './handlers';
 export { ActionsDependencies, SaveResult, CreateFn, ActionsHandlerConfig, useCreateAction } from './action';
 export { LoaderContext, LoaderProvider, useLoader } from './loader';
+export { ModalProvider, useGlobalModal, ModalContext, AppModal } from './modal';

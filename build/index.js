@@ -12,3 +12,4 @@ export { default as Alert } from './components/alerts/alert';
 export { mapToSelectDto, mapDefaultSelectValue, excludeFields } from './handlers';
 export { useCreateAction } from './action';
 export { LoaderContext, LoaderProvider, useLoader } from './loader';
+export { ModalProvider, useGlobalModal, ModalContext, AppModal } from './modal';
