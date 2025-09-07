@@ -2,6 +2,7 @@ export { mapToSelectDto } from './map_to_select';
 export { mapDefaultSelectValue } from './map_default_select_value';
 export { excludeFields } from './field/excludeFields';
 export { getTodayDate } from './date/getTodayDate';
+export { getMaxDateMonthsFromToday } from './date/getMaxDateMonthsFromToday';
 export { combineValidators } from './field/combineValidators';
 export { validateOnlyNumbers } from './field/validateOnlyNumbers';
 export { validatePositiveNumber } from './field/validatePositiveNumber';
